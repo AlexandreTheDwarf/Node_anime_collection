@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "nom_vo": "Tensei shitara Slime datta ken",
+    "nbre_saisons": 3,
+    "nbre_episodes": 50,
+    "image": "./img/1713354749222.webp"
+  },
+  {
+    "id": 5,
+    "nom_vo": "Shingeki no Kyojin",
+    "nom_fichier": "Attaque des titans",
+    "nbre_saisons": 5,
+    "nbre_episodes": 60,
+    "image": "./img/shingeki.webp"
+  },
+  {
+    "id": 1713353443396,
+    "nom_vo": "Re:Monster",
+    "nbre_saisons": 1,
+    "nbre_episodes": 12,
+    "image": "./img/1713354790224.webp"
+  }
+]
