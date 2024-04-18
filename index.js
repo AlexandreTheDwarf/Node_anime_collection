@@ -23,14 +23,14 @@ app.use((req, res, next) => {
 ////////////////////////////////////////////////////////////////////////////
 
 // Indique à Express d'utiliser le dossier 'img' pour servir des fichiers statiques
-app.use('/img', express.static('img'));
+app.use('/img', express.static('public'));
 
 ////////////////////////////////////////////////////////////////////////////
 
 // Configuration de Multer pour l'upload d'image
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './img'); // Destination où les images seront stockées
+        cb(null, './public'); // Destination où les images seront stockées
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Génère un nom unique pour l'image
