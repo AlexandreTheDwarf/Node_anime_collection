@@ -23,14 +23,14 @@ app.use((req, res, next) => {
 ////////////////////////////////////////////////////////////////////////////
 
 // Indique à Express d'utiliser le dossier 'img' pour servir des fichiers statiques
-app.use('/img', express.static('public'));
+app.use('/img', express.static('img'));
 
 ////////////////////////////////////////////////////////////////////////////
 
 // Configuration de Multer pour l'upload d'image
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, './public'); // Destination où les images seront stockées
+        cb(null, './img'); // Destination où les images seront stockées
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + path.extname(file.originalname)); // Génère un nom unique pour l'image
@@ -161,13 +161,13 @@ app.patch('/anime/:id', upload.single('image'), (req, res) => {
         const oldImagePath = animes[index].image;
 
         // Récupération des nouvelles données de l'anime à partir du corps de la requête
-        const { nom_fichier } = req.body;
+        const { nom_vo, nom_fichier, nbre_saisons, nbre_episodes } = req.body;
 
         // Récupération du nouveau chemin de l'image si un fichier d'image est envoyé dans la requête
         const newImagePath = req.file ? `./img/${req.file.filename}` : oldImagePath;
 
         // Met à jour les données de l'anime avec les nouvelles données reçues
-        animes[index] = { ...animes[index], nom_fichier, image: newImagePath };
+        animes[index] = { ...animes[index], nom_vo, nom_fichier, nbre_saisons, nbre_episodes, image: newImagePath };
 
         fs.writeFile(filePath, JSON.stringify(animes, null, 2), err => {
             if (err) {

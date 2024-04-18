@@ -4,21 +4,39 @@
     "nom_vo": "Tensei shitara Slime datta ken",
     "nbre_saisons": 3,
     "nbre_episodes": 50,
-    "image": "./img/1713354749222.webp"
-  },
-  {
-    "id": 5,
-    "nom_vo": "Shingeki no Kyojin",
-    "nom_fichier": "Attaque des titans",
-    "nbre_saisons": 5,
-    "nbre_episodes": 60,
-    "image": "./img/shingeki.webp"
+    "image": "./img/1713430173847.webp",
+    "nom_fichier": "Moi quand je me reincarne en slime"
   },
   {
     "id": 1713353443396,
     "nom_vo": "Re:Monster",
     "nbre_saisons": 1,
     "nbre_episodes": 12,
-    "image": "./img/1713354790224.webp"
+    "image": "./img/1713354790224.webp",
+    "nom_fichier": "Re Monster"
+  },
+  {
+    "id": 1713426577205,
+    "nom_vo": "Mushoku Tensei: Jobless Reincarnation",
+    "nom_fichier": "Mushoku Tensei Jobless Reincarnation",
+    "nbre_saisons": "2",
+    "nbre_episodes": "36",
+    "image": "./img/1713429877776.webp"
+  },
+  {
+    "id": 1713426740610,
+    "nom_vo": "The Unwanted Undead Adventurer",
+    "nom_fichier": "The Unwanted Undead Adventurer",
+    "nbre_saisons": 1,
+    "nbre_episodes": 12,
+    "image": "./img/1713426740608.webp"
+  },
+  {
+    "id": 1713427698956,
+    "nom_vo": "Chillin' Life in a Different World",
+    "nom_fichier": "Chillin' Life in a Different World",
+    "nbre_saisons": 1,
+    "nbre_episodes": 12,
+    "image": "./img/1713427698953.webp"
   }
 ]
