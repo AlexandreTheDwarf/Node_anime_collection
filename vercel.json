@@ -3,7 +3,12 @@
     "name": "node_isaac_helper",
     "builds": [
         {
-            "src" :"index.js", "use": "@vercel/node"
+            "src" :"index.js", 
+            "use": "@vercel/node"
+        },
+        {
+            "src": "img/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
